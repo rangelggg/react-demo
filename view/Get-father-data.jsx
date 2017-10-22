@@ -7,8 +7,8 @@ class Father extends React.Component {
         };
     }
 
-    changeUserName(){
-        this.setState({name:'guoru'});
+    changeUserName() {
+        this.setState({name: 'guoru'});
     }
 
     render() {
