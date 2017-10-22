@@ -8,18 +8,25 @@ class App extends React.Component {
         };
     }
 
-    changeState() {
+    changeAllState() {
         this.setState({
             name: 'guoru',
             age: 22
         });
     }
 
+    changeName() {
+        this.setState({
+            name: 'Lily'
+        });
+    }
+
     render() {
         return <div>
             <div>name: {this.state.name}</div>
-            <div>name: {this.state.age}</div>
-            <button onClick={this.changeState.bind(this)}>button</button>
+            <div>age: {this.state.age}</div>
+            <button onClick={this.changeAllState.bind(this)}>changeAllState</button>
+            <button onClick={this.changeName.bind(this)}>changeName</button>
         </div>;
     }
 }
