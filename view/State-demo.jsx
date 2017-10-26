@@ -2,12 +2,16 @@ class App extends React.Component {
 
     constructor() {
         super();
-        this.state = {date: new Date()};
+        this.state = {
+            date: new Date(),
+            year: 2017
+        };
     }
 
     render() {
         return <div>
-            {this.state.date.toLocaleTimeString()}
+            <div>{this.state.date.toLocaleTimeString()}</div>
+            <div>{this.state.year}</div>
         </div>;
     }
 }
